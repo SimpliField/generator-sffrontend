@@ -20,7 +20,7 @@ module.exports = yeoman.Base.extend({
         type: 'input',
         name: 'pathName',
         message: 'Where to ?',
-        default: 'src/app/components',
+        default: 'components',
       },
     ];
 
@@ -35,7 +35,7 @@ module.exports = yeoman.Base.extend({
       .forEach((extName) => {
         this.fs.copyTpl(
           this.templatePath(extName),
-          this.destinationPath(`${this.props.pathName}/${this.props.componentName}/${this.props.componentName}.${extName}`),
+          this.destinationPath(`src/app/${this.props.pathName}/${this.props.componentName}/${this.props.componentName}.${extName}`),
           {
             fileName: `${this.props.componentName}`,
             fileNameCamel: `${this.props.componentName}`
@@ -48,7 +48,7 @@ module.exports = yeoman.Base.extend({
       });
     this.fs.copyTpl(
       this.templatePath('template.html'),
-      this.destinationPath(`${this.props.pathName}/${this.props.componentName}/${this.props.componentName}.html`),
+      this.destinationPath(`src/app/${this.props.pathName}/${this.props.componentName}/${this.props.componentName}.html`),
       {
         fileNameCamel: `${this.props.componentName}`
           .replace(/(\-(.))/, ($1, $2) => $2.toUpperCase()),

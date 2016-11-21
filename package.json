@@ -43,8 +43,6 @@
   },
   "repository": "SimpliField/generator-sffrontend",
   "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
   },
   "license": "MIT"
 }
