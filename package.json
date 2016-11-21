@@ -1,6 +1,6 @@
 {
   "name": "generator-sffrontend",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generate ES6 style Angular 1.5+ files for fast developpement ",
   "homepage": "",
   "author": {
@@ -42,7 +42,6 @@
     }
   },
   "repository": "SimpliField/generator-sffrontend",
-  "scripts": {
-  },
+  "scripts": {},
   "license": "MIT"
 }
